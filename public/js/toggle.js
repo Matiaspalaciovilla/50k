@@ -1,0 +1,20 @@
+document.addEventListener('DOMContentLoaded', function () {
+    const signupContainer = document.querySelector('#addUsr');
+    const loginContainer = document.querySelector('#login');
+    const toggleToLoginBtn = document.querySelector('#toggleToLogin');
+    const toggleToSignupBtn = document.querySelector('#toggleToSignup');
+
+    toggleToLoginBtn.addEventListener('click', function () {
+        signupContainer.classList.add('hide');
+        signupContainer.classList.remove('show');
+        loginContainer.classList.add('show');
+        loginContainer.classList.remove('hide');
+    });
+
+    toggleToSignupBtn.addEventListener('click', function () {
+        loginContainer.classList.add('hide');
+        loginContainer.classList.remove('show');
+        signupContainer.classList.add('show');
+        signupContainer.classList.remove('hide');
+    });
+});
