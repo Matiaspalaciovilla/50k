@@ -27,20 +27,7 @@ nav a:hover {
     color: #ffffff;
 }
 
-.container-signup,
-.container-login {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 400px;
-    padding: 20px;
-    background: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    opacity: 1;
-    transition: opacity 0.5s ease, transform 0.5s ease;
-}
+
 .container-login{
     top: calc(50% - 55px);
 }
@@ -93,15 +80,19 @@ button:hover {
     background: #4797ff;
 }
 
-#loginMessage {
+#loginMessage, #signupMessage {
     text-align: center;
-    color: #ff6347;
-    margin-top: 20px;
+    margin: 10px 0 20px 0;
+}
+
+.container-signup {
+    opacity: 0;
+    pointer-events: none;
 }
 
 .container-login {
-    opacity: 0;
-    pointer-events: none;
+    opacity: 1;
+    pointer-events: all;
 }
 
 .show {

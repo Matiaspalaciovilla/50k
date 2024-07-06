@@ -7,8 +7,9 @@ body {
 header {
     background-color: #4CAF50;
     color: white;
-    text-align: center;
+    align-content: center;
     padding: 1rem 0;
+    display: flex;
 }
 
 .productos {

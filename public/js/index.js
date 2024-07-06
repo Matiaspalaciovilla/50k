@@ -1,4 +1,11 @@
-document.querySelector('#form').addEventListener('submit', function (event) {
+const signupForm = document.querySelector('#form');
+const signupMessage = document.querySelector('#signupMessage');
+const loginMessage = document.querySelector('#loginMessage');
+
+const toggleButton = document.querySelector('#toggleToSignup');
+const toggleButton2 = document.querySelector('#toggleToLogin');
+
+signupForm.addEventListener('submit', function (event) {
     event.preventDefault();
 
     const nombre = document.querySelector('#nombre').value;
@@ -6,16 +13,38 @@ document.querySelector('#form').addEventListener('submit', function (event) {
     const email = document.querySelector('#email').value;
     const password = document.querySelector('#password').value;
 
+
     const userKey = `user_${Date.now()}`;
 
     const userData = {
         nombre: nombre,
         apellido: apellido,
         email: email,
-        password: password
+        password: password,
+        timestamp: new Date().getTime()
     };
+    if (!nombre || !apellido || !email || !password) {
+        signupMessage.textContent = 'Please fill in all fields';
+        signupMessage.style.color = 'red';
+    }
+        else{
+        localStorage.setItem(userKey, JSON.stringify(userData));
+        signupMessage.textContent = 'User registered sucessfully';
+        signupMessage.style.color = 'green';
+        }
 
-    localStorage.setItem(userKey, JSON.stringify(userData));
-
-    alert('User registered correctly');
 });
+
+toggleButton.addEventListener('click', function (event) {
+    event.preventDefault();
+
+    loginMessage.textContent = '';
+}
+)
+
+toggleButton2.addEventListener('click', function (event) {
+    event.preventDefault();
+
+    signupMessage.textContent = '';
+}
+)

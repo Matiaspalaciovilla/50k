@@ -19,8 +19,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 break;
             }
         }
-
-        if (userFound) {
+        if(!email || !password){
+            loginMessage.textContent = 'Please fill in all fields';
+            loginMessage.style.color ='red';
+        }
+        else if (userFound) {
             loginMessage.textContent = 'Login successful!';
             loginMessage.style.color = 'green';
         } else {
