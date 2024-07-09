@@ -35,6 +35,7 @@ function getLastItem() {
         if (item.timestamp && item.timestamp > lastTimestamp) {
             lastTimestamp = item.timestamp;
             lastItem = {
+                nombre: item.nombre,
                 key: key,
                 value: item.value,
                 timestamp: item.timestamp
@@ -48,5 +49,10 @@ function getLastItem() {
         username.innerHTML = "Login";
     } else {
         username.innerHTML = lastItem.nombre;
+    }
+}
+function reload() {
+    if (key !== 'lastItem' && storage[key] === lastItemValue) {
+        delete storage[key];
     }
 }

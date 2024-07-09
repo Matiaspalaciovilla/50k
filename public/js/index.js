@@ -32,7 +32,7 @@ signupForm.addEventListener('submit', function (event) {
         signupMessage.textContent = 'User registered sucessfully';
         signupMessage.style.color = 'green';
         }
-
+    
 });
 
 toggleButton.addEventListener('click', function (event) {

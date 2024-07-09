@@ -16,6 +16,10 @@ body {
 }
 
 header {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
     background-color: #007bff;
     color: white;
     text-align: center;
@@ -29,6 +33,7 @@ header h1 {
 
 main {
     padding: 20px;
+    margin-top: 160px;
 }
 
 .productos {
@@ -41,14 +46,19 @@ main {
     background-color: white;
     border: 1px solid #ddd;
     padding: 20px;
+    height: 400px;
     text-align: center;
     transition: transform 0.3s ease;
 }
 
+.producto h2{
+    font-size: small;
+
+}
+
 .producto img {
-    max-width: 80px;
     height: auto;
-    width: 80px; 
+    width: 120px; 
     max-height: 120%; 
     object-fit: cover; 
 }
@@ -62,9 +72,9 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
+    width: 100%;
     position: fixed;
     bottom: 0;
-    width: 100%;
 }
 
 .username {
