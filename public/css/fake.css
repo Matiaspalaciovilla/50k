@@ -7,9 +7,9 @@
 
 
 body {
+    background-color: rgb(230, 230, 230);
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    color: #333;
+    color: #111111;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -20,7 +20,7 @@ header {
     top: 0;
     z-index: 10;
     width: 100%;
-    background-color: #007bff;
+    background-color: #0056b3;
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -33,7 +33,7 @@ header h1 {
 
 main {
     padding: 20px;
-    margin-top: 160px;
+    margin: 160px 0 300px 0;
 }
 
 .productos {
@@ -43,17 +43,36 @@ main {
 }
 
 .producto {
-    background-color: white;
-    border: 1px solid #ddd;
+    background-color: #f2f2f2;
+    border-radius: 5px;
     padding: 20px;
     height: 400px;
     text-align: center;
     transition: transform 0.3s ease;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
 }
 
 .producto h2{
     font-size: small;
+    justify-self: center;
+}
 
+.producto button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.producto button:hover {
+    background: #4797ff;
 }
 
 .producto img {
@@ -61,6 +80,9 @@ main {
     width: 120px; 
     max-height: 120%; 
     object-fit: cover; 
+    justify-self: center;
+    align-self: center;
+    margin: calc(40px) 0 calc(10px) 0;
 }
 
 .producto:hover {
@@ -68,7 +90,7 @@ main {
 }
 
 footer {
-    background-color: #007bff;
+    background-color: #0056b3;
     color: white;
     text-align: center;
     padding: 10px 0;
