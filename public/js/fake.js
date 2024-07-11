@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <img src="${producto.image}" alt="${producto.title}">
                     <h2>${producto.title}</h2>
                     <p>${producto.price} USD</p>
-                    <button>Comprar</button>
+                    <button>Buy</button>
                 `;
 
                 productosContainer.appendChild(productoDiv);

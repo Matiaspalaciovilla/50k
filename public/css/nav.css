@@ -1,0 +1,31 @@
+nav {
+    background: #333;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+    top: 0;
+}
+
+nav a {
+    color: #aaaaaa;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
+    transition: transform 0.5s ;
+}
+
+nav a:hover {
+    color: #ffffff;
+    transform: translateY(-1px);
+    transition: color 0.5s;
+}
+
+nav div{
+    display: flex;
+    justify-content: end;
+    width: 50%;
+}
