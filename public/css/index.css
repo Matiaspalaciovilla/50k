@@ -21,11 +21,13 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 400px;
+    max-width: 500px;
     padding: 20px;
     background: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    display: flex;
+    justify-content: center;
     opacity: 1;
     transition: opacity 0.5s ease, transform 0.5s ease;
 }
@@ -74,4 +76,26 @@ img {
     filter: brightness(1.1);
     mix-blend-mode: multiply;
     overflow-y: hidden;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+    gap: 20px;
+}
+
+main div {
+    text-align: center;
+}
+
+img {
+    width: 200px;
+}
+
+main span {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
 }

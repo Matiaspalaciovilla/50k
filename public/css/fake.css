@@ -10,33 +10,13 @@ body {
     line-height: 1.6;
 }
 
-        /*
-    header {
-        position: fixed;
-        top: 0;
-        z-index: 10;
-        width: 100%;
-        background-color: #0056b3;
-        color: white;
-        text-align: center;
-        padding: 20px 0;
-    }
-    
-    header h1 {
-        font-size: 2.5em;
-        margin-bottom: 10px;
-    }
-    */
-
-main {
-    padding: 20px;
-    margin: 40px 0 300px 0;
-}
 
 .productos {
     display: grid;
-    grid-template-columns: repeat(4, minmax(150px, 1fr));
-    gap: 3%;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 1%;
+    column-gap: 3%;
+    width: 100%;
 }
 
 .producto {
@@ -48,6 +28,7 @@ main {
     transition: transform 0.3s ease;
     display: grid;
     grid-template-rows: 150px repeat(2, 0.5fr);
+    overflow: hidden;
 }
 
 .producto h2{
@@ -85,8 +66,8 @@ main {
 }
 
 .producto img {
-    height: auto;
-    width: max-content; 
+    height: 100px;
+    width: auto; 
     max-width: 200px;
     max-height: 120%; 
     object-fit: cover; 
@@ -94,38 +75,21 @@ main {
     align-self: center;
     margin: calc(40px) 0 calc(10px) 0;
 
-    filter: brightness(1.1);
-    mix-blend-mode: multiply;
-    overflow-y: hidden;
 }
 
 .producto:hover {
     transform: translateY(-5px);
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-}
-
-.username {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.username:hover {
-    text-decoration: underline;
-}
 
 @media screen and (max-width: 1100px){
     .productos{
         grid-template-columns: repeat(3, minmax(150px, 1fr));
-        gap: 2%;
     }
 }
+@media screen and (max-width: 700px) {
+    .productos {
+        grid-template-columns: repeat(2, minmax(150px, 1fr));
+    }
+}
+
