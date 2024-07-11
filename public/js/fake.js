@@ -47,7 +47,6 @@ function getLastItem() {
     }
 
     if (lastItem === null || lastItem.nombre === undefined) {
-        username.innerHTML = "Login";
     } else {
         username.innerHTML = `<ion-icon name="person-circle-outline" class="user-pic"></ion-icon>${lastItem.nombre}`;
     }

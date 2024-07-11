@@ -18,7 +18,7 @@ main {
 
 .general-container {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 500px;
@@ -32,20 +32,7 @@ main {
     transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
-button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-    background: #333;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-button:hover {
+main a:hover {
     background: #4797ff;
 }
 
@@ -98,4 +85,21 @@ main span {
     display: flex;
     justify-content: space-around;
     width: 100%;
+}
+main p{
+    margin-bottom: 20px;
+}
+
+main a {
+    justify-self: center;
+    width: 40%;
+    padding: 10px;
+    margin-top:0px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
 }
