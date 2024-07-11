@@ -41,7 +41,7 @@ body {
 .producto p {
     font-size: medium;
     font-weight: 600;
-    color: rgb(18, 156, 0);
+    color: rgb(76, 255, 52);
     justify-self: center;
     align-self: flex-end;
 }
@@ -93,3 +93,7 @@ body {
     }
 }
 
+.producto button:hover {
+    background-color: rgb(110, 255, 91);
+    color: #333;
+}

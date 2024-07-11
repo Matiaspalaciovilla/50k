@@ -16,6 +16,7 @@ nav a {
     margin: 0 15px;
     font-size: 1.1em;
     transition: transform 0.5s ;
+    align-items: center;
 }
 
 nav a:hover {
@@ -28,4 +29,17 @@ nav div{
     display: flex;
     justify-content: end;
     width: 50%;
+}
+
+@media screen and (max-width: 510px) {
+    nav div {
+        width: 40%;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    nav div {
+        width: 20%;
+    }
 }

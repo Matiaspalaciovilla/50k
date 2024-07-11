@@ -1,5 +1,6 @@
 .container-login{
     top: calc(50% - 55px);
+    width: 100%;
 }
 
 h1 {
