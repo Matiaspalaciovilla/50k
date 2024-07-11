@@ -41,7 +41,7 @@ body {
 .producto p {
     font-size: medium;
     font-weight: 600;
-    color: rgb(76, 255, 52);
+    color:  #333;
     justify-self: center;
     align-self: flex-end;
 }
@@ -82,7 +82,7 @@ body {
 }
 
 
-@media screen and (max-width: 1100px){
+@media screen and (max-width: 1050px){
     .productos{
         grid-template-columns: repeat(3, minmax(150px, 1fr));
     }
@@ -92,8 +92,12 @@ body {
         grid-template-columns: repeat(2, minmax(150px, 1fr));
     }
 }
+@media screen and (max-width: 500px) {
+    .productos {
+        grid-template-columns: repeat(1, minmax(150px, 1fr));
+    }
+}
 
 .producto button:hover {
-    background-color: rgb(110, 255, 91);
-    color: #333;
+    background-color: #4797ff;
 }

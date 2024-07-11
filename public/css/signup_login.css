@@ -31,7 +31,7 @@ h1 {
 
 .formularioUsr input[type="submit"]:hover,
 .loginForm input[type="submit"]:hover {
-    background: #89ff5a;
+    background: #4797ff;
 }
 
 #loginMessage, #signupMessage {
