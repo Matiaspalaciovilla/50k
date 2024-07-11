@@ -67,7 +67,7 @@ body {
 
 .producto img {
     height: 100px;
-    width: auto; 
+    width: fit-content; 
     max-width: 200px;
     max-height: 120%; 
     object-fit: cover; 
